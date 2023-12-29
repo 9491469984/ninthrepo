@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Page</title>
+</head>
+<body>
+  <h1>login Form</h1>
+  <form method="post">
+    {% csrf_token %}
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <textarea id="password" name="password" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <a href="data" class="button-link">
+    <button type="button">Get Data</button>
+  </a>
+</body>
+</html>
